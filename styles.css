@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  background-color: #c7ecff;
+}
+
+path {
+  fill: #fffee8; 
+  stroke: #c7ecff;
+  stroke-width: 0.6;
+  stroke-opacity: .5;
+  transition: 0.3s;
+}
+
+path:hover {
+  fill: #ffbb00;
+  transition: 0.3s;
+}
+
+svg g {
+ 	width: 600%;
+  height: 600%
+}

@@ -6,7 +6,7 @@ body {
 
 path {
   fill: #fffee8; 
-  stroke: #c7ecff;
+  stroke: #224f7c;
   stroke-width: 0.6;
   stroke-opacity: .5;
   transition: 0.3s;
@@ -17,7 +17,26 @@ path:hover {
   transition: 0.3s;
 }
 
+
+#div1{
+  float:left;
+  width:40%;
+  height:100%;
+  border:1px dotted#9fb3b5;
+}
+
+#div2{
+  float:left;
+  width:40%;
+  height:100%;
+  border:1px dotted#9fb3b5;
+}
+
+svg{
+  float:left;
+}
+
 svg g {
- 	width: 600%;
-  height: 600%
+  width: 600%;
+ height: 600%;
 }

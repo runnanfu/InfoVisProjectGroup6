@@ -54,9 +54,9 @@ footer{
   fill: orange;
 }
 
-.proviMouseOut {
+/* .proviMouseOut {
   .attr("fill", function(d) { return color(d.properties.all); })
-}
+} */
 
 /* Make the municipalities layer transparent */
 .municipalities {
@@ -149,7 +149,7 @@ text {
   
 }
 
-.baraxis text 
+.baraxis text {
   font: 10px sans-serif;
 }
 

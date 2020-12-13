@@ -98,6 +98,11 @@ footer{
           stroke: none;
       }
 
+.axis2 path, .axis2 tick, .axis2 line {
+  fill: none;
+  stroke: none;
+}
+
 /*Province population legend text*/
 text {
         font-size: .6rem;
@@ -144,10 +149,6 @@ text {
   fill: steelblue;
 }
 
-#chart {
-  translate: (100 300);
-  
-}
 
 .baraxis text {
   font: 10px sans-serif;

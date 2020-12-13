@@ -7,6 +7,11 @@
 </head>
 <body>
 <h1>Tourism patterns in different provinces of the Netherlands</h1>
+<h2>
+<label for="year">Please select a year: 2015</label>
+<input type="range" min=2015 max=2019 step=1 id="year" value=2019 oninput="selected_year.value = year.value">
+<output name="selected_year" id="selected_year">2019</output>
+</h2>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//d3js.org/d3.v4.min.js" charset="utf-8"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
@@ -14,16 +19,6 @@
 <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="index.js"></script>
-<footer>
-  <p>Created by: Runnan Fu, Katriel Ester, Jing Zhou (Delft University of Technology)</p>
-  <p>Help from 
-    <a href = "https://github.com/adboy316/d3-Interactive-map-netherlands"> Ariel Delgado </a>
-  </p>
-  <p>Data Source: <a href="https://opendata.cbs.nl/statline/#/CBS/en/dataset/82059ENG/table?ts=1607776912752">
-  Centraal Bureau voor de Statistiek</a></p>
-  <p>Map Data: <a href="https://cartomap.github.io/nl/">
-  GitHub</a></p>
-</footer>
 </body>
 
 

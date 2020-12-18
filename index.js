@@ -498,6 +498,17 @@ function draw(whichyear) {
         .attr("y", textboxPositionY + 30)
         .attr("dy", ".35em")
         .text("Total Guests: " + totalvisitors.value);
+
+    var i = parseInt(whichyear);
+    if (i == 2020 )
+    {
+      svgMain.append("text")
+      .attr("class", "population-text")
+      .attr("x", textboxPositionX + 120)
+      .attr("y", textboxPositionY + 30)
+      .attr("dy", ".35em")
+      .text("for Jan-Sep");
+    }
     
   // =================
   // Handlers:

@@ -256,7 +256,8 @@ function draw(whichyear) {
         chart.append("text")
         .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
         .attr("transform", "translate("+ (barWidth/2) +","+(barHeight-215)+")")  // centre below axis
-        .text("Type of accommodation");
+        .text("Type of accommodation")
+        .style("fill", "#72789e");
 
         /*barChart
           .append("text")
@@ -337,7 +338,8 @@ function draw(whichyear) {
   chart2.append("text")
     .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
     .attr("transform", "translate("+ (barWidth2/2) +")")  // centre below axis
-    .text("Visitors' Countries of Resident");
+    .text("Visitors' Countries of Resident")
+    .style("fill", "#72789e");
 
   var x3 = d3.scaleBand()
     .range([0, barWidth3])
@@ -395,7 +397,8 @@ function draw(whichyear) {
     chart3.append("text")
     .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
     .attr("transform", "translate("+ (barWidth3/2) +","+(barHeight3-170)+")")  // centre below axis
-    .text("Monthly guests data");
+    .text("Monthly guests data")
+    .style("fill", "#72789e");
 
     // =================
     // Color scale legend  based on population

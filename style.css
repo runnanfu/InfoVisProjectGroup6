@@ -10,20 +10,28 @@ body {
 
 /* Headings  and Footer*/  
 h1 {
-  font-size: 1.2rem;
+  font-size: 2.6rem;
   fill: #4F4F4F;
   font-weight: 300;
   text-anchor: middle;
 }
 
 h2 {
-  font-size: 0.8rem;
+  font-size: 1.6rem;
   fill: #AAAAAA;
   font-weight: 300;
   text-anchor: middle;
 }
 
 h3 {
+text-anchor: middle;
+font-size: .6rem;
+fill: #4F4F4F;
+font-weight: 300;
+}
+
+footer{
+font-family: "Helvetica", "Arial", sans-serif;
 text-anchor: middle;
 font-size: .6rem;
 fill: #4F4F4F;
@@ -46,14 +54,6 @@ pointer-events: none; /* Prevents text from messing up provinces hover style */
 fill: orange;
 }
 
-/*.proviMouseOut {
-.attr("fill", function(d) { return color(d.properties.total_population); })
-}
-*/
-/* Make the municipalities layer transparent */
-.municipalities {
-fill: transparent; 
-}
 
 /* White boundaries between provinces */
 .province-boundaries {
@@ -62,6 +62,7 @@ fill: none;
 stroke: #fff;
 stroke-width: .7px;
 }
+
 
 
 /*Province population legend title*/
@@ -81,35 +82,34 @@ stroke-width: .7px;
 text {
   font-size: .6rem;
   fill: #AAAAAA;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-
-/*Municipalities tooltip*/
+/*tooltip*/
 div.tooltip { 
-    position: absolute;     
-    text-align: center;     
-    width: 80px;          
-    height: 14px;         
-    padding: 2px;       
-    font: 12px sans-serif;    
-    background: #fff; 
-    border: 0px;        
-    pointer-events: none;  
+  position: absolute;     
+  text-align: center;     
+  width: 80px;          
+  height: 14px;         
+  padding: 2px;       
+  font: 12px sans-serif;    
+  background: #fff; 
+  border: 0px;        
+  pointer-events: none;  
 }
 
 
 /* Textbox displaying name of place and total population */
 
 .place-name {
-  font-size: 1.0rem;
+  font-size: 1.6rem;
   fill: #4F4F4F;
   font-weight: 300;
   text-anchor: left;
 }
 .population-text {
 
-  font-size: .8rem;
+  font-size: 1rem;
   fill: #4F4F4F;
   font-weight: 300;
   text-anchor: left;
@@ -118,14 +118,13 @@ div.tooltip {
 }
 
 
-/*bargraph style*/
+/*barchart style*/
 .bar {
 fill: steelblue;
 }
 
 #chart {
 translate: (100 300);
-
 }
 
 
@@ -159,3 +158,5 @@ fill: none;
 stroke: #000;
 shape-rendering: crispEdges;
 }
+
+
